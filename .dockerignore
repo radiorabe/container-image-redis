@@ -1,0 +1,5 @@
+.pre-commit-config.yaml
+.github/
+trivy.*
+docs/
+mkdocs.yml

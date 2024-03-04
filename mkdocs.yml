@@ -1,0 +1,48 @@
+site_name: Redis on UBI9 Minimal
+repo_url: https://github.com/radiorabe/container-image-redis
+repo_name: radiorabe/container-image-redis
+
+theme:
+  name: "material"
+  palette:
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: '#00c9bf'
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    # Palette toggle for light mode
+    - scheme: default
+      primary: '#00c9bf'
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  icon:
+    repo: fontawesome/brands/git-alt
+  features:
+    - content.code.copy
+    - toc.integrate
+
+markdown_extensions:
+- pymdownx.highlight:
+    anchor_linenums: true
+- pymdownx.inlinehilite
+- pymdownx.snippets
+- pymdownx.superfences
+
+extra_css:
+- css/style.css
+
+plugins:
+- search
+- gen-files:
+    scripts:
+    - docs/gen_ref_pages.py
+- literate-nav
+- section-index
+
+nav:
+  - README: index.md
+
+watch:
+  - README.md
