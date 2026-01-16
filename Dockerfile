@@ -1,5 +1,5 @@
 FROM quay.io/sclorg/redis-6-c9s:20250108 as source
-FROM ghcr.io/radiorabe/ubi9-minimal:0.11.2 AS app
+FROM ghcr.io/radiorabe/ubi9-minimal:0.11.3 AS app
 
 ENV CONTAINER_SCRIPTS_PATH=/usr/share/container-scripts/redis \
     HOME=/var/lib/redis \
